@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<head>
+			<meta charset='utf-8'>
+			<meta
+				name='viewport'
+				content='width=device-width,initial-scale=1'
+			>
+			<title>Memoryy</title>
+			<link
+				rel='icon'
+				type='image/png'
+				href='/favicon.png'
+			>
+			<link
+				rel='stylesheet'
+				href='/global.css'
+			>
+			<link
+				rel='stylesheet'
+				href='/build/bundle.css'
+			>
+			<script
+				defer
+				src='/build/bundle.js'
+			></script>
+		</head>
+		<meta charset="utf-8">
+		<style>
+			path {
+				transform-origin: 50% 0%;
+			}
+
+			.background--custom {
+				background-color: #000000;
+				position: absolute;
+				width: 100vw;
+				height: 100vh;
+				z-index: -1;
+				top: 0;
+				left: 0;
+			}
+
+			@keyframes path0 {
+				0% {
+					transform: rotate(60deg);
+				}
+
+				100% {
+					transform: rotate(-60deg);
+				}
+			}
+
+			@keyframes path1 {
+				0% {
+					transform: rotate(30deg);
+				}
+
+				100% {
+					transform: rotate(-30deg);
+				}
+			}
+
+			@keyframes path2 {
+				0% {
+					transform: rotate(-50deg);
+				}
+
+				100% {
+					transform: rotate(50deg);
+				}
+			}
+
+			@keyframes path3 {
+				0% {
+					transform: rotate(60deg);
+				}
+
+				100% {
+					transform: rotate(-60deg);
+				}
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<svg
+			class="background--custom"
+			id="demo"
+			viewBox="0 0 100 100"
+			preserveAspectRatio="none"
+		>
+			<path
+				fill="#150050"
+				fill-opacity="0.1"
+				d="M-100 -100L200 -100L200 30L-100 30Z"
+				style="animation: path0 166.66666666666666s linear infinite alternate;"
+			/>
+			<path
+				fill="#3F0071"
+				fill-opacity="0.2"
+				d="M-100 -100L200 -100L200 10L-100 10Z"
+				style="animation: path1 250s linear infinite alternate;"
+			/>
+			<path
+				fill="#610094"
+				fill-opacity="0.5"
+				d="M-100 -100L200 -100L200 50L-100 50Z"
+				style="animation: path2 166.66666666666666s linear infinite alternate;"
+			/>
+			<path
+				fill="#000000"
+				fill-opacity="0.6"
+				d="M-100 -100L200 -100L200 20L-100 20Z"
+				style="animation: path3 100s linear infinite alternate;"
+			/>
+		</svg>
+	</body>
+
+</html>
